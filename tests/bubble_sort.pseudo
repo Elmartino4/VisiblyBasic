@@ -1,0 +1,23 @@
+﻿#-- type: sorting
+#-- input: Input
+#-- main: SimpleBubbleSort
+
+BEGIN SimpleBubbleSort
+	SET Swapped = True
+	GET Input()
+	WHILE Swapped == True
+		SET Swapped = False
+		SET Comparison = 0
+		WHILE Comparison < Input.length
+			IF Input(Comparison) > Input(Comparison + 1)
+				SET Temporary = Input(Comparison)
+				SET Input(Comparison) = Input(Comparison + 1)
+				SET Input(Comparison + 1) = Temporary
+				SET Swapped = True
+			ENDIF
+			SET Comparison = Comparison + 1
+		ENDWHILE
+	ENDWHILE
+
+	RETURN Input
+END SimpleBubbleSort

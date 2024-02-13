@@ -1,0 +1,15 @@
+#-- type: unsorted-search
+#-- main: LinearSearch
+
+BEGIN LinearSearch
+    GET Array()
+    GET Value
+    SET Found = False
+    FOR i = 0 TO Array.length - 1
+        IF Array(i) == Value
+            SET Found = True
+        ENDIF
+    NEXT i
+
+    RETURN Found
+END LinearSearch

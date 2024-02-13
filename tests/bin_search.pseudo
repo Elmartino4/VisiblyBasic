@@ -1,0 +1,24 @@
+﻿#-- type: sorted-search
+#-- input: Array, SearchValue
+#-- main: BinarySearch
+
+BEGIN BinarySearch
+	GET Array()
+	SET Low = 0
+	SET High = Array.length - 1
+	SET Found = False
+	GET SearchValue
+	WHILE High >= Low
+		SET Middle = (Low + High) / 2
+		SET current = Array(Middle)
+		IF SearchValue < current
+			SET High = Middle - 1
+		ELSEIF SearchValue == current
+			RETURN True
+		ELSE
+			SET Low = Middle + 1
+		ENDIF
+	ENDWHILE
+
+	RETURN False
+END BinarySearch

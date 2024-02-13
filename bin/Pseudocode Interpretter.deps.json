@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Pseudocode Interpretter/1.0.0": {
+        "dependencies": {
+          "YamlDotNet": "13.1.0"
+        },
+        "runtime": {
+          "Pseudocode Interpretter.dll": {}
+        }
+      },
+      "YamlDotNet/13.1.0": {
+        "runtime": {
+          "lib/net6.0/YamlDotNet.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Pseudocode Interpretter/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "YamlDotNet/13.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S4tzJjofMDx8PKtbnwkaMznbPD1aUffVKW+ClhfOGAYFIPuY9sSrArcFQOcRkbwRP1kYIaMbXk4Vsnfk3dE3dQ==",
+      "path": "yamldotnet/13.1.0",
+      "hashPath": "yamldotnet.13.1.0.nupkg.sha512"
+    }
+  }
+}
